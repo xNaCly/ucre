@@ -1,0 +1,23 @@
+// vim: syntax=kdl
+meta-data {
+    title "Hello World"
+    author "xnacly"
+}
+
+doc {
+    heading {
+        id "hello-world"
+        level 5
+    }
+
+    image {
+        href "https://xnacly.me/images/avatar.webp"
+        alt "avatar"
+    }
+}
+
+lua {
+    heading = doc.queryId("hello-world")
+    print heading
+    heading.text = "Hello World"
+}

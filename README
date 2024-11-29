@@ -1,0 +1,21 @@
+ucre
+====
+
+ucre - Unique and Cool Rendering Engine
+
+ucre is meant to display dynamic content and modifiy said content via
+scripting. It is meant to replace HTML with the ucre content language and JS
+with Lua.
+
+See example/.
+
+Projects
+--------
+
+The ucre project includes the following projects:
+
+- ucre: a rendering engine and vm for the ucre bytecode 
+- ucc: ucrelang parser and bytecode compiler
+- h2u: html to ucrelang compiler
+- md2u: markdown to ucrelang compiler
+- lua: exposing ucre vm and document API's into lua 
