@@ -14,7 +14,8 @@ Projects
 
 The ucre project includes the following projects:
 
-- ucre: a rendering engine and vm for the ucre bytecode 
+- re: a rendering engine 
+- uvm: vm for the ucre bytecode 
 - ucc: ucrelang parser and bytecode compiler
 - h2u: html to ucrelang compiler
 - md2u: markdown to ucrelang compiler
