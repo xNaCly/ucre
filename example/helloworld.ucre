@@ -1,4 +1,4 @@
-// vim: syntax=kdl
+// vim: filetype=kdl
 meta-data {
     title "Hello World"
     author "xnacly"
