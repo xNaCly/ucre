@@ -3,4 +3,13 @@ name = "re"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+default = ["skia-safe/gl"]
+
 [dependencies]
+skia-safe = { version = "0.80.1" }
+glutin = "0.32.0"
+glutin-winit = "0.5.0"
+raw-window-handle = "0.6.0"
+gl-rs = { version = "0.14.0", package = "gl" }
+winit = "0.30.5"
