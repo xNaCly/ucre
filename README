@@ -20,3 +20,37 @@ The ucre project includes the following projects:
 - h2u: html to ucrelang compiler
 - md2u: markdown to ucrelang compiler
 - lua: exposing ucre vm and document API's into lua 
+- shared: library for shared types and other utilities
+
+Getting started
+---------------
+
+Clone the repo:
+
+    git clone git@github.com:xNaCly/ucre
+
+Build via cargo:
+
+    cargo build --release
+
+Invoke ucre:
+
+    ./target/release/ucre
+    ./target/release/ucre <subcommand|file>
+
+Subcommands correspond directly to the project naming above, except shared, lua and re:
+
+    # no subcommand parses, compiles and renders the given ucre file
+    ./target/release/ucre ./example/helloworld.ucre
+
+    # executes the compiled bytecode ucre file (bucre) without rendering them
+    ./target/release/ucre uvm ./example/helloworld.bucre
+
+    # compiles the given ucre file to ucre bytecode (bucre)
+    ./target/release/ucre ucc ./example/helloworld.ucre
+
+    # transpiles html to ucre
+    ./target/release/ucre h2u ./example/helloworld.html
+
+    # transpiles markdown to ucre
+    ./target/release/ucre md2u ./example/helloworld.md
