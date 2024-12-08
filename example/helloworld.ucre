@@ -8,6 +8,7 @@ doc {
     heading {
         id "hello-world"
         level 5
+        text "Hello World"
     }
 
     image {
@@ -19,5 +20,5 @@ doc {
 lua {
     heading = doc.queryId("hello-world")
     print heading
-    heading.text = "Hello World"
+    heading.text = heading.text .. " from lua"
 }
