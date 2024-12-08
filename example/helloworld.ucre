@@ -17,8 +17,8 @@ doc {
     }
 }
 
-lua {
+lua [
     heading = doc.queryId("hello-world")
     print heading
     heading.text = heading.text .. " from lua"
-}
+]

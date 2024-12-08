@@ -1,6 +1,6 @@
 use crate::types::uom::{
     node::{AttributeKey, AttributeValue, Attributes},
-    Node, NodeKind, UcreDocumentError,
+    Node, NodeKind, UcreError,
 };
 
 /// Heading signifies a Heading defined via `heading {}` in ucre lang.
@@ -17,7 +17,7 @@ impl Node for Heading {
         Some(&self.text)
     }
 
-    fn set_text(&mut self, s: String) -> Result<(), UcreDocumentError> {
+    fn set_text(&mut self, s: String) -> Result<(), UcreError> {
         self.text = s;
         Ok(())
     }
@@ -38,7 +38,7 @@ impl Node for Heading {
         None
     }
 
-    fn set_children(&mut self, _: Vec<Box<dyn Node>>) -> Result<(), UcreDocumentError> {
-        Err(UcreDocumentError::new("Heading has no children"))
+    fn set_children(&mut self, _: Vec<Box<dyn Node>>) -> Result<(), UcreError> {
+        Err(UcreError::from_str("Heading has no children"))
     }
 }

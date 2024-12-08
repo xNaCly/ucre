@@ -4,7 +4,7 @@ mod node;
 pub mod nodes;
 
 #[allow(unused_imports)]
-pub use self::err::UcreDocumentError;
+pub use self::err::UcreError;
 pub use self::file::File;
 pub use self::node::Node;
 

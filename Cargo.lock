@@ -7,8 +7,16 @@ name = "shared"
 version = "0.1.0"
 
 [[package]]
+name = "ucc"
+version = "0.1.0"
+dependencies = [
+ "shared",
+]
+
+[[package]]
 name = "ucre"
 version = "0.1.0"
 dependencies = [
  "shared",
+ "ucc",
 ]

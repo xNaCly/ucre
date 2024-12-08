@@ -1,6 +1,7 @@
 use std::collections::HashMap;
 
-use super::{NodeKind, UcreDocumentError};
+use super::NodeKind;
+use super::UcreError;
 
 pub type AttributeKey = String;
 pub type AttributeValue = Vec<String>;
@@ -20,7 +21,7 @@ pub trait Node {
     /// extract the inner text
     fn text(&self) -> Option<&str>;
     /// sets the contained type to s, if not supported, UcreDocumentError with cause dispatched
-    fn set_text(&mut self, s: String) -> Result<(), UcreDocumentError>;
+    fn set_text(&mut self, s: String) -> Result<(), UcreError>;
 
     /// returns all attributes, K is specifically of type String to allow custom attribute keys
     fn attr(&self) -> &Attributes;
@@ -30,7 +31,7 @@ pub trait Node {
     /// returns all children
     fn children(&self) -> Option<&Vec<Box<dyn Node>>>;
     /// attempts to set the children of the node to c, if not supported, UcreDocumentError with cause dispatched
-    fn set_children(&mut self, c: Vec<Box<dyn Node>>) -> Result<(), UcreDocumentError>;
+    fn set_children(&mut self, c: Vec<Box<dyn Node>>) -> Result<(), UcreError>;
 
     fn kind(&self) -> NodeKind;
 }
