@@ -21,6 +21,7 @@ The ucre project includes the following projects:
 - md2u: markdown to ucrelang compiler
 - lua: exposing ucre vm and document API's into lua 
 - shared: library for shared types and other utilities
+- lsp: language server protocol implementation for ucre
 
 Getting started
 ---------------
