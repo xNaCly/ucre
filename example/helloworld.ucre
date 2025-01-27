@@ -11,9 +11,32 @@ doc {
         text "Hello World"
     }
 
-    image {
-        href "https://xnacly.me/images/avatar.webp"
-        alt "avatar"
+    container {
+        paragraph {
+            text "This is a paragraph"
+        }
+
+        image {
+            href "https://xnacly.me/images/avatar.webp"
+            alt "avatar"
+        }
+    }
+}
+
+style {
+    heading 
+        matches {
+            id "hello-world"
+            text "Hello World"
+        }
+        fontSize 12pt
+        color #f523ad
+    }
+
+    container {
+        image {
+            radius 50%
+        }
     }
 }
 

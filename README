@@ -4,10 +4,10 @@ ucre
 ucre - Unique and Cool Rendering Engine
 
 ucre is meant to display dynamic content and modifiy said content via
-scripting. It is meant to replace HTML with the ucre content language and JS
-with Lua.
+scripting. It is meant to replace HTML with the ucre content language, JS with
+Lua and css with the ucre styling language.
 
-See example/.
+See example/ for the same example in html, markdown and ucre.
 
 Projects
 --------

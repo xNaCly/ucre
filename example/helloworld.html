@@ -1,15 +1,32 @@
 <html>
+
+<head>
+    <title>Hello World</title>
+    <meta name="author" content="xnacly" />
+    <meta name="title" content="Hello World" />
+
     <head>
-        <title>Hello World</title>
-        <meta name="author" content="xnacly"/>
-        <meta name="title" content="Hello World"/>
-    <head>
+
     <body>
         <h5 id="hello-world">Hello World</h5>
-        <img href="https://xnacly.me/images/avatar.webp" alt="avatar">
+        <div>
+            <p>This is a paragraph</p>
+            <img href="https://xnacly.me/images/avatar.webp" alt="avatar">
+        </div>
     </body>
-    <script lang="js">
+    <script>
         let heading = document.querySelector("#hello-world");
         heading.innerText += " from js"
     </script>
+
 </html>
+<style>
+    h5 #hello-world {
+        font-size: 12pt;
+        color: #f523ad;
+    }
+
+    div image {
+        border-radius: 50%;
+    }
+</style>
